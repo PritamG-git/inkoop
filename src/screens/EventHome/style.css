@@ -1,0 +1,153 @@
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.card {
+  width: 320px;
+  height: 440px;
+  position: relative;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+    5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  margin: 30px;
+}
+.box {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  top: 20px;
+  background: #ebf5fc;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.card:hover .box {
+  transform: translateY(-50px);
+  background: linear-gradient(45deg, #b95ce4, #4f29cd);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(0, 0, 0, 0.05);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.card:hover h2 {
+  color: rgba(0, 0, 0, 0.05);
+}
+
+h3 {
+  color: #777;
+  font-size: 1.8em;
+  z-index: 1;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.card:hover h3 {
+  color: #fff;
+}
+
+.typevent {
+  color: #fff;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card:hover .typevent {
+  background: #ff568f;
+}
+
+.card:hover .detail {
+  color: #fff;
+}
+
+.detail {
+  color: #000;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.bg1 {
+  background: #02b9c4;
+}
+.bg2 {
+  background: #03a9;
+}
+.bg3 {
+  background: #03f498;
+}
+.bg4 {
+  background: #f4a803;
+}
+.bg5 {
+  background: #f40303;
+}
+.bg6 {
+  background: #03bcf4b4;
+}
+.bg7 {
+  background: #031bf4;
+}
+.bg8 {
+  background: #03a8f467;
+}
+.bg9 {
+  background: #03f40f;
+}
+.bg10 {
+  background: #03f4b8;
+}
+.bg11 {
+  background: #f4bc03;
+}
+.bg12 {
+  background: #03f423;
+}
+.bg13 {
+  background: #f44f03;
+}
+.bg14 {
+  background: #6b03f4;
+}

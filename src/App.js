@@ -16,11 +16,8 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        {state.isLoggedIn ? (
-          <Route path="/events" component={EventHome} />
-        ) : (
-          <Route exact path="/" component={AuthPage} />
-        )}
+        <Route exact path="/" component={AuthPage} />
+        <Route path="/events" component={EventHome} />
       </Switch>
     </Router>
   );
